@@ -1,0 +1,195 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+
+}
+
+/*
+nav{
+	position: sticky;
+	top:0;
+	z-index: 1000;
+}
+ maybe I'll use this sticky navbar or maybe not..desicions desicions*/
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: #363538;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+header {
+	background-color:#58558F;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+#logo{
+	color: white;
+	margin: 5% 0 0 3%;
+	align-self: flex-start;
+}
+#name{
+	color:#9574EB;
+	font-size: 4em;
+	margin-left: 18%;
+}
+#shadow{
+	text-shadow: 3px 3px #EA81CD;
+	margin-left: 3.7%;
+}
+nav ul{
+	display: flex;
+	list-style:none;
+	gap:2px;
+	padding-right: 15px;
+}
+
+nav a:link{
+	text-decoration: none;
+	margin:1em;
+	font-size: 2em;
+	color:#A282EB;
+	transition: .2s ease-out;
+	position: relative;
+	top:0;
+	display: block;
+}
+
+nav ul a{
+	width:100%;
+	height:45%;
+}
+
+nav a:visited{
+	color:#A4C5EA;
+}
+
+nav a:hover{
+	color:#EA81CD;
+}
+.underline{
+	position:relative;
+	display: inline-block;
+	text-align: center;
+}
+.underline::after {
+	content:'';
+	height:2px;
+	width:45%;
+	background-color:#EA81CD;
+	position:absolute;
+	left:0;
+	transform: translateX(58%);
+	bottom:1px;
+	opacity:0;
+	transition: all 0.2s ease-out;
+	pointer-events:none;
+}
+.underline:hover::after{
+	opacity:1;
+}
+
+nav a:active{
+	top:3px;
+}
+/*Social links */
+#socials-wrapper ul{
+	list-style: none;
+	display:flex;
+	justify-content: flex-start;
+	font-size: 2em;
+	background-color: rgba(88,85,143,0.65);
+	width:40%;
+	height:auto;
+	border-radius: 90px;
+	margin-left: 15%;
+	padding:1%;
+	box-shadow: 3px 3px 2px 1px black;
+	
+}
+
+#socials-wrapper li{
+	margin-left: 10%;
+}
+#socials-wrapper a:link{
+	text-decoration: none;
+	position: relative;
+	top:0;
+	transition: .2s ease-in-out;
+}
+#socials-wrapper a:active{
+	top:3px;
+}
+/*grid for first section of website (not including narbar) */
+#me{
+	float: right;
+	width:40%;
+	height:auto;
+}
+/*end */
+.social{
+	width:100%;
+	height:auto;
+	transition: 0.2s ease-in-out;
+}
+.social:hover{
+	transform: scale(1.2);
+}
+#position{
+	color:#A4C5EA;
+	font-size: 1em;
+	margin-top:3%;
+	margin-left:18%;
+}
+.more{
+	margin:3%;
+	font-size: 3.75em;
+	color:#9574EB;;
+	letter-spacing: 5px;
+
+}
+#details-wrapper{
+	font-size: 2em;
+	color:#9574EB;;
+	margin:3%;
+	float: left;
+	text-indent: 1em;
+}
+#details-wrapper h3{
+	color:#C28CE9;
+	text-shadow: 2px 2px #58558F;
+}
+#details-wrapper  li {
+	background-image:url("images/nebula.png");
+	background-repeat: no-repeat;
+	background-position: 0;
+	list-style: none;
+	margin-left: 4%;
+	width: 30%;
+}
+#details-wrapper li:hover{
+	background-color:rgba(88,85,143,0.65); 
+	color:#EA81CD;
+	background-size:1em;
+	border-radius: 3em;
+}
+#poloroid{
+	width:30%;
+	height:auto;
+	border: 10px solid #F2F2F0;
+	float:right;
+	margin-right: 3%;
+	transform: rotate(15deg) scale(.8);
+	transition: .5s ease-out;
+}
+#poloroid:hover{
+	transform: scale(1);
+}
+#work a{
+	color:white;
+}
+#work{
+	display: grid;
+	grid-template-columns: 50% 10%;
+}

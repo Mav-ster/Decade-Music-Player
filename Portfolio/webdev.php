@@ -1,0 +1,1 @@
+<a href="final2/final.html" title="project one" target="_blank">Concert Blog</a> <!--Animated photo that will link to the concert project. Make the photo grow when hovered -->
